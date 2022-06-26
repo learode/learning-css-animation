@@ -1,3 +1,102 @@
 .header {
+    /* position: ; */
+    background-color: #1d1d1d;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    perspective: 100px;
+}
+
+nav ul {
+    display: flex;
+    gap: .4rem;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+li a {
+    text-decoration: none;
+    color: #ff3939;
+}
+
+.banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 252, 247);
+}
+
+
+.nigga-logo {
+    font-weight: lighter;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    border: .2rem solid floralwhite;
+    border-radius: 50%;
+    position: relative;
+    color: floralwhite;
+}
+.nigga-logo::after {
+    content: "";
+    position: absolute;
+        top: 6px;
+        left: 17%;
+    border: .2rem solid wheat;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+
+header:before {
+  animation: fade-slide-down 1.6s ease-in-out forwards;
+
+
+    content: "";
+    background: linear-gradient(to bottom, #4e4e4e26, #1d1d1dd7),
+                url(../images/background.jpg) no-repeat bottom;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    z-index: -1;
     
+}
+header:after {
+    position: absolute;
+        top: 90%;
+        right: -5%;
+        left: -5%;
+    content: "";
+    /* width: 100%; */
+    height: 20rem;
+    background-color: white;
+    transform-origin: 0 0;
+    transform: rotateZ(-4deg);
+    z-index: 0;
+}
+
+
+
+
+/********  KEYFRAMES FOR ANIMATION  ********/
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
