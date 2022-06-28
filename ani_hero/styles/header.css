@@ -76,6 +76,7 @@ header:before {
     
 }
 header:after {
+    animation: rotate-up .6s ease-in forwards;
     position: absolute;
         top: 90%;
         right: -5%;
@@ -85,16 +86,16 @@ header:after {
     height: 20rem;
     background-color: white;
     transform-origin: 0 0;
-    transform: rotateZ(-4deg);
+    /* transform: rotateZ(-4deg); */
     z-index: 0;
 }
 
 .animate-pop-in {
     opacity: 0;
-    animation: pop-in .6s ease forwards;
+    animation: pop-in .8s ease forwards;
 }
 .nigga-logo {
-    animation-delay: .4s;
+    animation-delay: .6s;
 }
 .title {
     animation-delay: .8s;
@@ -126,5 +127,11 @@ header:after {
     100% {
         opacity: 1;
         transform: none;
+    }
+}
+
+@keyframes rotate-up {
+    100% {
+        transform: rotateZ(-4deg);
     }
 }
