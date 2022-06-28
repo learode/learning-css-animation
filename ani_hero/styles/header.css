@@ -7,6 +7,11 @@
     perspective: 100px;
 }
 
+nav {
+    position: absolute;
+        right: 2rem;
+}
+
 nav ul {
     display: flex;
     gap: .4rem;
@@ -84,7 +89,19 @@ header:after {
     z-index: 0;
 }
 
-
+.animate-pop-in {
+    opacity: 0;
+    animation: pop-in .6s ease forwards;
+}
+.nigga-logo {
+    animation-delay: .4s;
+}
+.title {
+    animation-delay: .8s;
+}
+.subtitle {
+    animation-delay: 1.2s;
+}
 
 
 /********  KEYFRAMES FOR ANIMATION  ********/
@@ -99,4 +116,15 @@ header:after {
     opacity: 1;
     transform: none;
   }
+}
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-5rem) scale(.6);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
