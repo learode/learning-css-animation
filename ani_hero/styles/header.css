@@ -1,3 +1,11 @@
+.still-loading *,
+.still-loading *:before,
+.still-loading *:after {
+  display: none;
+  animation-play-state: paused !important;
+}
+
+
 .header {
     /* position: ; */
     background-color: #1d1d1d;
@@ -57,7 +65,7 @@ li a {
 }
 
 
-header:before {
+header::before {
   animation: fade-slide-down 1.6s ease-in-out forwards;
 
 
@@ -75,8 +83,8 @@ header:before {
     z-index: -1;
     
 }
-header:after {
-    animation: rotate-up .6s ease-in forwards;
+header::after {
+    animation: rotate-up .5s ease-in forwards;
     position: absolute;
         top: 90%;
         right: -5%;
@@ -148,7 +156,7 @@ header:after {
 
 @keyframes rotate-up {
     100% {
-        transform: rotateZ(-4deg);
+        transform: rotateZ(-3deg);
     }
 }
 
