@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 body {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     width: 100%;
-    color: floralwhite;
+    /* color: floralwhite; */
+    color: #1d1d1d;
 }
 
 
