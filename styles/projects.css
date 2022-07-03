@@ -16,3 +16,12 @@ main {
 .projects h3 {
   margin-bottom: 4rem;
 }
+
+.project {
+  position: relative;
+}
+
+.hid {
+  position: absolute;
+  top: 32px;
+}
